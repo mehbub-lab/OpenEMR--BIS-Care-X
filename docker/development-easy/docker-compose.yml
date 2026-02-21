@@ -27,6 +27,8 @@ services:
   openemr:
     restart: always
     image: openemr/openemr:flex
+    extra_hosts:
+    - "host.docker.internal:host-gateway"
     ports:
     - 8300:80
     - 9300:443
