@@ -4,6 +4,14 @@
 
 This OpenEMR custom module detects new patient documents and forwards metadata to an external **Blockchain Ingestion Service (BIS)** for immutable anchoring on **IPFS** or any blockchain. OpenEMR only emits events; all storage/blockchain logic lives in the external BIS microservice.
 
+## Screenshots
+
+### Blockchain Ingestion Status Dashboard
+![BIS Dashboard — shows Total Documents, Anchored count, and queue activity with IPFS CIDs](screenshots/bis_dashboard.png)
+
+### Module Configuration (Admin → Config → Blockchain Ingestion)
+![BIS Configuration — Enable toggle, BIS Endpoint URL, Timeout, Max Retries, Status Menu](screenshots/bis_config.png)
+
 ---
 
 ## Architecture
